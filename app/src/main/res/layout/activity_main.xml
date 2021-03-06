@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="STATE GST-2.5%"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        tools:ignore="MissingConstraints" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="172dp"
+        android:layout_height="151dp"
+        app:cardCornerRadius="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.199">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/carda"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quality 1"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"/>
+            <EditText
+                android:id="@+id/kg1"
+                android:layout_width="152dp"
+                android:layout_height="47dp"
+                android:ems="10"
+                android:hint="Enter No.of.Kg"
+                android:inputType="numberDecimal"/>
+
+            <EditText
+                android:id="@+id/rs1"
+                android:layout_width="154dp"
+                android:layout_height="42dp"
+                android:ems="10"
+                android:hint="Enter Price"
+                android:inputType="numberDecimal"
+
+                />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tot"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="312dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/s"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tot"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/c"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/s"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/gt"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/c"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/multi"
+        android:layout_width="100dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="68dp"
+        android:text="RESULT"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="312dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="TOTAL"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="CENTRAL GST-2.5%"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="GRAND TOTAL"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/names"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="44dp"
+        android:text="GST Calculator"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#BA560B"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="172dp"
+        android:layout_height="151dp"
+        app:cardCornerRadius="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.969"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.199">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/carda"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quality 2"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/kg2"
+                android:layout_width="158dp"
+                android:layout_height="46dp"
+
+                android:ems="10"
+                android:hint="Enter No.of.Kg"
+                android:inputType="numberDecimal"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/rs2"
+                android:layout_width="158dp"
+                android:layout_height="38dp"
+
+                android:ems="10"
+                android:hint="Enter Price"
+                android:inputType="numberDecimal" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
